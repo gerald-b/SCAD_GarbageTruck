@@ -16,29 +16,34 @@ difference()
     }
 }
 
+addOnsBottom();
 
-//color("red")
-translate([10.5,0,-10.5])
-cube([2.5,96.0,10.5]);
 
-//color("red")
-translate([65.5,0,-10.5])
-cube([2.5,96.0,10.5]);
-
-/* TODO */
-//color("red")
-translate([breite/2,43,-5])
-cube([1,86,10],center=true);
-
-difference()
+module addOnsBottom()
 {
     //color("red")
-    translate([0,laenge,0])
-    cube([breite,19,3]);
+    translate([10.5,0,-10.5])
+    cube([2.5,96.0,10.5]);
 
     //color("red")
-    translate([breite/2,92,0])
-    cube([40,12,12],center=true);
+    translate([65.5,0,-10.5])
+    cube([2.5,96.0,10.5]);
+
+    /* TODO */
+    //color("red")
+    translate([breite/2,43,-5])
+    cube([1,86,10],center=true);
+
+    difference()
+    {
+        //color("red")
+        translate([0,laenge,0])
+        cube([breite,19,3]);
+
+        //color("red")
+        translate([breite/2,92,0])
+        cube([40,12,12],center=true);
+    }
 }
 
 module garbageTruckBody()
