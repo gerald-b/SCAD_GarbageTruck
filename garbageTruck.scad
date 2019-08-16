@@ -1,6 +1,9 @@
 hoehe=62.0;
 breite=78.2;
 laenge=77.0;
+$fn = 50;
+
+include<mod_bulge.scad>
 
 difference()
 {
